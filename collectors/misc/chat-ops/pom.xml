@@ -42,7 +42,7 @@
         <artifactId>docker-maven-plugin</artifactId>
         <configuration>
           <skipDockerBuild>false</skipDockerBuild>
-          <imageName>hygieia-chat-ops-collector</imageName>
+          <imageName>atorresd/hygieia-chat-ops-collector</imageName>
           <dockerDirectory>${project.basedir}/docker</dockerDirectory>
           <resources>
             <resource>

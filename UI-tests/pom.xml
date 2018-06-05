@@ -60,7 +60,7 @@
 				</executions> -->
 				<configuration>
 					<skipDockerBuild>true</skipDockerBuild>
-					<imageName>hygieia-${project.build.finalName}</imageName>
+					<imageName>atorresd/hygieia-${project.build.finalName}</imageName>
 					<baseImage>${uitest.baseImage}</baseImage>
 					<workdir>/usr/src/app/</workdir>
 				</configuration>

@@ -17,7 +17,7 @@ services:
 
   api:
     build: api
-    image: hygieia-api
+    image: atorresd/hygieia-api
     depends_on:
       - db-setup
     ports:
@@ -25,7 +25,7 @@ services:
 
   api-audit:
     build: api-audit
-    image: hygieia-api-audit
+    image: atorresd/hygieia-api-audit
     depends_on:
       - db-setup
     ports:
@@ -33,7 +33,7 @@ services:
 
   ui:
     build: UI
-    image: hygieia-ui
+    image: atorresd/hygieia-ui
     depends_on:
       - api
     ports:
@@ -41,115 +41,115 @@ services:
 
   appdynamics-collector:
     build: collectors/performance/appdynamics
-    image: hygieia-appdynamics-collector
+    image: atorresd/hygieia-appdynamics-collector
     depends_on:
       - db-setup
 
   artifactory-artifact-collector:
     build: collectors/artifact/artifactory
-    image: hygieia-artifactory-artifact-collector
+    image: atorresd/hygieia-artifactory-artifact-collector
     depends_on:
       - db-setup
 
   bamboo-build-collector:
     build: collectors/build/bamboo
-    image: hygieia-bamboo-build-collector
+    image: atorresd/hygieia-bamboo-build-collector
     depends_on:
       - db-setup
 
   bitbucket-collector:
     build: collectors/scm/bitbucket
-    image: hygieia-bitbucket-scm-collector
+    image: atorresd/hygieia-bitbucket-scm-collector
     depends_on:
       - db-setup
 
   chat-ops-collector:
     build: collectors/misc/chat-ops
-    image: hygieia-chat-ops-collector
+    image: atorresd/hygieia-chat-ops-collector
     depends_on:
       - db-setup
 
   hpsm-cmdb-collector:
     build: collectors/cmdb/hpsm
-    image: hygieia-hpsm-cmdb-collector
+    image: atorresd/hygieia-hpsm-cmdb-collector
     depends_on:
       - db-setup
 
   github-collector:
     build: collectors/scm/github
-    image: hygieia-github-scm-collector
+    image: atorresd/hygieia-github-scm-collector
     depends_on:
       - db-setup
 
   github-graphql-collector:
     build: collectors/scm/github-graphql
-    image: hygieia-github-graphql-scm-collector
+    image: atorresd/hygieia-github-graphql-scm-collector
     depends_on:
       - db-setup
 
   gitlab-feature-collector:
     build: collectors/feature/gitlab
-    image: hygieia-gitlab-feature-collector
+    image: atorresd/hygieia-gitlab-feature-collector
     depends_on:
       - db-setup
 
   gitlab-scm-collector:
     build: collectors/feature/gitlab
-    image: hygieia-gitlab-scm-collector
+    image: atorresd/hygieia-gitlab-scm-collector
     depends_on:
       - db-setup
 
   jenkins-build-collector:
     build: collectors/build/jenkins
-    image: hygieia-jenkins-build-collector
+    image: atorresd/hygieia-jenkins-build-collector
     depends_on:
       - db-setup
 
   jenkins-codequality-collector:
     build: collectors/build/jenkins-codequality
-    image: hygieia-jenkins-codequality-collector
+    image: atorresd/hygieia-jenkins-codequality-collector
     depends_on:
       - db-setup
 
   jenkins-cucumber-test-collector:
     build: collectors/build/jenkins-cucumber
-    image: hygieia-jenkins-cucumber-test-collector
+    image: atorresd/hygieia-jenkins-cucumber-test-collector
     depends_on:
       - db-setup
 
   jira-collector:
     build: collectors/feature/jira
-    image: hygieia-jira-feature-collector
+    image: atorresd/hygieia-jira-feature-collector
     depends_on:
       - db-setup
 
   nexus-iq-collector:
     build: collectors/library-policy/nexus-iq-collector
-    image: hygieia-nexus-iq-collector
+    image: atorresd/hygieia-nexus-iq-collector
     depends_on:
       - db-setup
 
   sonar-codequality-collector:
     build: collectors/build/sonar
-    image: hygieia-sonar-codequality-collector
+    image: atorresd/hygieia-sonar-codequality-collector
     depends_on:
       - db-setup
 
   subversion-collector:
     build: collectors/scm/subversion
-    image: hygieia-subversion-scm-collector
+    image: atorresd/hygieia-subversion-scm-collector
     depends_on:
       - db-setup
 
   udeploy-collector:
     build: collectors/deploy/udeploy
-    image: hygieia-udeploy-collector
+    image: atorresd/hygieia-udeploy-collector
     depends_on:
       - db-setup
 
   versionone-collector:
     build: collectors/feature/versionone
-    image: hygieia-versionone-collector
+    image: atorresd/hygieia-versionone-collector
     depends_on:
       - db-setup
 
@@ -161,7 +161,7 @@ services:
 
   score-collector:
     build: collectors/misc/score
-    image: hygieia-score-collector
+    image: atorresd/hygieia-score-collector
     depends_on:
       - db-setup
 

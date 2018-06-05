@@ -44,7 +44,7 @@
         <artifactId>docker-maven-plugin</artifactId>
         <configuration>
           <skipDockerBuild>false</skipDockerBuild>
-          <imageName>hygieia-artifactory-artifact-collector</imageName>
+          <imageName>atorresd/hygieia-artifactory-artifact-collector</imageName>
           <dockerDirectory>${project.basedir}/docker</dockerDirectory>
           <resources>
             <resource>

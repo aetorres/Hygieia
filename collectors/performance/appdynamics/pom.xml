@@ -40,7 +40,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
                     <skipDockerBuild>false</skipDockerBuild>
-                    <imageName>hygieia-appdynamics-collector</imageName>
+                    <imageName>atorresd/hygieia-appdynamics-collector</imageName>
                     <dockerDirectory>${project.basedir}/docker</dockerDirectory>
                     <resources>
                         <resource>

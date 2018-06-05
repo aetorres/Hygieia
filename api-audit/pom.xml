@@ -60,7 +60,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
                     <skipDockerBuild>false</skipDockerBuild>
-                    <imageName>hygieia-${project.build.finalName}</imageName>
+                    <imageName>atorresd/hygieia-${project.build.finalName}</imageName>
                     <dockerDirectory>${project.basedir}/docker</dockerDirectory>
                     <resources>
                         <resource>

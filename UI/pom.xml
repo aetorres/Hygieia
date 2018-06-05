@@ -124,7 +124,7 @@
         <artifactId>docker-maven-plugin</artifactId>
         <configuration>
 	  <skipDockerBuild>false</skipDockerBuild>
-          <imageName>hygieia-ui</imageName>
+          <imageName>atorresd/hygieia-ui</imageName>
 	  <skipDockerBuild>false</skipDockerBuild>
           <dockerDirectory>${project.basedir}/docker</dockerDirectory>
           <resources>

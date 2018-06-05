@@ -37,7 +37,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<configuration>
 					<skipDockerBuild>false</skipDockerBuild>
-					<imageName>hygieia-gitlab-scm-collector</imageName>
+					<imageName>atorresd/hygieia-gitlab-scm-collector</imageName>
 					<dockerDirectory>${project.basedir}/docker</dockerDirectory>
 					<resources>
 						<resource>
