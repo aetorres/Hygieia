@@ -17,6 +17,16 @@ pipeline{
       
     }
 
+    stage('Connect to Kubernetes Master'){
+      steps{
+        sh ''' 
+            kubectl cluster-info
+            kubectl get pods --all-namespaces
+
+        '''
+      }
+    }
+
     stage('Push Images to Docker Hub'){
       steps{
         //withDockerRegistry([credentialsId: 'docker-pass', url: 'https://hub.docker.com']){ 
