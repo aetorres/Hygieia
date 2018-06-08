@@ -20,8 +20,8 @@ pipeline{
     stage('Connect to Kubernetes Master'){
       steps{
         sh ''' 
-            kubectl cluster-info
-            kubectl get pods --all-namespaces
+            /usr/local/bin/kubectl cluster-info
+            /usr/local/bin/kubectl get pods --all-namespaces
 
         '''
       }
